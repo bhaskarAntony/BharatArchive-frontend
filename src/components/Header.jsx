@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Menu, X, User, LogOut, Shield } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/logo.png'
 
 const Header = () => {
   const { user, logout, isAdmin } = useAuth();
@@ -19,7 +20,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-serif font-bold text-gray-900">BharatArchive</span>
+            {/* <span className="text-2xl font-serif font-bold text-gray-900">BharatArchive</span> */}
+            <img src={logo} alt="bharat archive logo" width={200} />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">
