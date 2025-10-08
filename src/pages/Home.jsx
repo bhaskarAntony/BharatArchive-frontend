@@ -55,11 +55,11 @@ const Home = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search temples, festivals, traditions..."
-                className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:border-blue-500 focus:outline-none"
+                className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:border-yellow-700 focus:outline-none"
               />
               <button
                 type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 text-white px-6 py-2 hover:bg-blue-700 transition-colors"
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-yellow-700 text-white px-6 py-2 hover:bg-yellow-800 transition-colors"
               >
                 <Search size={20} />
               </button>
@@ -71,7 +71,7 @@ const Home = () => {
               <Link
                 key={category}
                 to={`/explore?category=${category}`}
-                className="px-4 py-2 bg-white border border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-colors text-sm"
+                className="px-4 py-2 bg-white border border-gray-300 hover:border-yellow-700 hover:text-yellow-700 transition-colors text-sm"
               >
                 {category.replace('-', ' ').toUpperCase()}
               </Link>
@@ -82,7 +82,7 @@ const Home = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex items-center gap-2 mb-8">
-          <TrendingUp className="text-blue-600" size={24} />
+          <TrendingUp className="text-yellow-700" size={24} />
           <h2 className="text-2xl font-serif font-bold text-gray-900">Popular Entries</h2>
         </div>
 
@@ -103,7 +103,7 @@ const Home = () => {
             <div className="text-center mt-12">
               <Link
                 to="/explore"
-                className="inline-block px-8 py-3 bg-blue-600 text-white hover:bg-blue-700 transition-colors text-lg"
+                className="inline-block px-8 py-3 bg-yellow-700 text-white hover:bg-yellow-800 transition-colors text-lg"
               >
                 Explore All Entries
               </Link>

@@ -150,7 +150,7 @@ const Admin = () => {
           <h1 className="text-3xl font-serif font-bold text-gray-900">Admin Panel</h1>
           <button
             onClick={() => setShowForm(!showForm)}
-            className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+            className="flex items-center gap-2 px-6 py-3 bg-yellow-700 text-white hover:bg-blue-700 transition-colors"
           >
             <Plus size={20} />
             Add New Entry
@@ -226,7 +226,7 @@ const Admin = () => {
                 <button
                   type="button"
                   onClick={addImageUrlField}
-                  className="text-sm text-blue-600 hover:text-blue-700"
+                  className="text-sm text-yellow-700 hover:text-blue-700"
                 >
                   + Add another image
                 </button>
@@ -292,7 +292,7 @@ const Admin = () => {
               <div className="flex gap-3">
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+                  className="px-6 py-3 bg-yellow-700 text-white hover:bg-yellow-800 transition-colors"
                 >
                   {editingEntry ? 'Update Entry' : 'Create Entry'}
                 </button>
@@ -362,14 +362,14 @@ const Admin = () => {
                         <div className="flex gap-2">
                           <button
                             onClick={() => navigate(`/entry/${entry.slug || entry._id}`)}
-                            className="p-2 text-gray-600 hover:text-blue-600"
+                            className="p-2 text-gray-600 hover:text-yellow-700"
                             title="View"
                           >
                             <Eye size={18} />
                           </button>
                           <button
                             onClick={() => handleEdit(entry)}
-                            className="p-2 text-gray-600 hover:text-blue-600"
+                            className="p-2 text-gray-600 hover:text-yellow-700"
                             title="Edit"
                           >
                             <Edit size={18} />

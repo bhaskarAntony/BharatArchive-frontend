@@ -108,7 +108,7 @@ const EntryDetail = () => {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Entry not found</h2>
         <button
           onClick={() => navigate('/')}
-          className="text-blue-600 hover:text-blue-700"
+          className="text-yellow-700 hover:text-yellow-700"
         >
           Go back home
         </button>
@@ -129,7 +129,7 @@ const EntryDetail = () => {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-6">
-          <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">
+          <span className="text-sm font-medium text-yellow-700 uppercase tracking-wide">
             {entry.category.replace('-', ' ')}
           </span>
         </div>
@@ -169,7 +169,7 @@ const EntryDetail = () => {
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
                   className={`flex-shrink-0 w-20 h-20 border-2 ${
-                    currentImageIndex === index ? 'border-blue-600' : 'border-gray-200'
+                    currentImageIndex === index ? 'border-yellow-700' : 'border-gray-200'
                   }`}
                 >
                   <img src={url} alt={`${entry.title} ${index + 1}`} className="w-full h-full object-cover" />
@@ -231,7 +231,7 @@ const EntryDetail = () => {
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+                className="px-6 py-2 bg-yellow-700 text-white hover:bg-yellow-800 transition-colors"
               >
                 Post Comment
               </button>
@@ -242,7 +242,7 @@ const EntryDetail = () => {
                 Please{' '}
                 <button
                   onClick={() => navigate('/login')}
-                  className="text-blue-600 hover:text-blue-700 underline"
+                  className="text-yellow-700 hover:text-yellow-700 underline"
                 >
                   login
                 </button>{' '}
