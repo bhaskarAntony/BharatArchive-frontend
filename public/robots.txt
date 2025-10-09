@@ -1,0 +1,38 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Disallow admin and authentication pages from being indexed
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+
+# Crawl-delay for bots
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://bharat-archive.vercel.app/sitemap.xml
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block specific bots if needed (example)
+User-agent: BadBot
+Disallow: /
+
+# Allow access to CSS and JS files for better rendering
+User-agent: *
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$

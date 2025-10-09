@@ -75,7 +75,7 @@ const Explore = () => {
 
   return (
     <>
-      <SEO
+       <SEO
         title="Explore Indian Heritage"
         description="Browse through our comprehensive collection of Indian cultural heritage, temples, festivals, and traditions"
         keywords="explore Indian heritage, temples, festivals, cultural archive"

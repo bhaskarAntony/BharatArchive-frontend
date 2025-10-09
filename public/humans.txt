@@ -1,0 +1,15 @@
+/* TEAM */
+Developer: Bhaskar babu cm
+Site: https://bharat-archive.vercel.app
+Location: India
+
+/* THANKS */
+To all contributors preserving India's cultural heritage
+
+/* SITE */
+Last update: 2025/10/09
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, Node.js, Express, MongoDB
+Software: Visual Studio Code, Git
+SEO: Optimized for search engines
+Accessibility: WCAG 2.1 compliant
